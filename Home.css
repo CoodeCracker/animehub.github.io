@@ -13,7 +13,7 @@ body {
     color: white;
     padding: 2px;
     position: absolute;
-    top:60px;
+    top:130px;
     left:190px;
 }
 
@@ -25,7 +25,7 @@ body {
 .W {
     font-size: 150px;
     position: absolute;
-    top:-70px;
+    top:-0px;
     left:50px;
     font-style:italic;
     font-family:fantasy;
@@ -41,7 +41,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     writing-mode: vertical-lr;
     position: absolute;
-    top:100px ;
+    top:170px ;
     left:580px ;
 
 }
@@ -77,7 +77,7 @@ body {
 .buttons {
     position:absolute;
     top:0;
-    left:80px;
+    left:35px;
     margin: 20px;
     
 }
@@ -102,4 +102,9 @@ body {
 
 #anime:hover {
     color: rgb(156, 136, 136);
+}
+
+#title-border {
+
+    border: 1px solid white;
 }
