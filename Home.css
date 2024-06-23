@@ -5,6 +5,9 @@
 }
 body {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .site-title, .W{
@@ -55,7 +58,6 @@ body {
 }
 
 .search-bar {
-    width: fit-content;
     position: absolute;
     top: 0;
     right: 0;
@@ -108,4 +110,16 @@ body {
 
 .LinkToNewTab {
     color: transparent;
+}
+
+
+@media (max-width: 740px) {
+    #search-space {
+        width: 40px;
+    }
+}
+@media (max-width: 745px) {
+    #home, #anime, #manga, #manhwa {
+        width: 70px;
+    }
 }
