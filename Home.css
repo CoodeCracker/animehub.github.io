@@ -4,26 +4,22 @@
 
 }
 body {
-    background-color: #4158D0;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.walpaper {
-
-    width:170px;
-    height:238px;
-    margin-left: 19cm;
-    margin-top: 5cm;
-    border: 6px solid green;
-}
 .site-title, .W{
     font-family:Arial, Helvetica, sans-serif ;
-    color: black;
+    color: white;
     padding: 2px;
     position: absolute;
-    top:60px;
+    top:130px;
     left:190px;
 }
+
+
 
 .part1 {
     font-weight: bolder;
@@ -33,56 +29,64 @@ body {
 .W {
     font-size: 150px;
     position: absolute;
-    top:-70px;
+    top:-0px;
     left:50px;
     font-style:italic;
     font-family:fantasy;
+    z-index: 1;
 }
 .O {
     font-size:80px ;
 }
 
+<<<<<<< HEAD
 .hologram-world {
     width: 27px;
     position: absolute;
     top:117px;
     left:555px;
     
+=======
+#title-border {
+
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(58, 38, 38);
+>>>>>>> test
 }
 
 .tachinime {
+    color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     writing-mode: vertical-lr;
     position: absolute;
-    top:100px ;
+    top:170px ;
     left:580px ;
 
 }
 
 .search-bar {
-    width: fit-content;
     position: absolute;
     top: 0;
     right: 0;
     margin: 22px;
     background-color:none;
-    padding: 2px;
-    border-radius: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border: 2.5px white solid;
+    border-radius: 20px;
+    padding: 0%;
 
 }
 #search-space{
-    border: 2px solid black;
+    border: 1px solid black;
     width:200px ;
-    height: 22px;
+    height: 24px;
+    border-radius: 10px;
 }
 #search-button {
     border: 2px solid black;
-    height: 22px;
+    height: 24px;
+    border-radius: 10px;
 }
 #search-button:hover {
     background-color:antiquewhite;
@@ -91,23 +95,41 @@ body {
 .buttons {
     position:absolute;
     top:0;
-    left:80px;
-    margin: 20px;
-    
+    left:35px;
+    margin: 20px;    
+}
+
+#home:hover, #anime:hover, #manga:hover, #manhwa:hover {
+    color: rgb(156, 136, 136);
 }
 
 #home, #anime, #manga, #manhwa {
-    background-color: aquamarine;
-    color: black;
+
+    background-color:transparent ;
+    color: white;
     text-align: center;
-    font-size: 20px; /* Change the font size here */
-    width: 150px; /* Change the width here */
-    height: 30px; /* Change the height here */
-    padding: 2px;
-    border-radius: 10px;
-    border: 2px solid blue;
+    font-size: 20px; 
+    width: 100px; 
+    height: 30px; 
+    border: none;
+    outline: none;
+    padding: none;
+    margin:none;
+   
 }
 
-#home:hover, #anime:hover, #manga:hover, #manhwa:hover{
-    background-color:antiquewhite;
+.LinkToNewTab {
+    color: transparent;
+}
+
+
+@media (max-width: 740px) {
+    #search-space {
+        width: 40px;
+    }
+}
+@media (max-width: 745px) {
+    #home, #anime, #manga, #manhwa {
+        width: 70px;
+    }
 }
